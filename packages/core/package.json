@@ -58,6 +58,11 @@
     "typescript": "5.8.2"
   },
   "dependencies": {
+    "@opentelemetry/api": "^1.9.0",
+    "@opentelemetry/exporter-trace-otlp-http": "^0.53.0",
+    "@opentelemetry/instrumentation-pg": "^0.52.0",
+    "@opentelemetry/sdk-metrics": "^1.26.0",
+    "@opentelemetry/sdk-node": "^0.53.0",
     "@types/hapi__shot": "^6.0.0",
     "buffer": "^6.0.3",
     "crypto-browserify": "^3.12.1",
@@ -67,6 +72,7 @@
     "handlebars": "^4.7.8",
     "js-sha1": "0.7.0",
     "langchain": "^0.3.15",
+    "pg": "^8.14.1",
     "pino": "^9.6.0",
     "pino-pretty": "^13.0.0",
     "stream-browserify": "^3.0.0",

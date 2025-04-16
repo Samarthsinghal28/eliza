@@ -104,6 +104,7 @@ export const ServiceType = {
   EMAIL: 'email',
   TEE: 'tee',
   TASK: 'task',
+  INSTRUMENTATION: 'instrumentation',
 } as const;
 
 /**
@@ -145,6 +146,7 @@ export interface BaseMetadata {
   scope?: MemoryScope;
   timestamp?: number;
   tags?: string[];
+  runId?: UUID; // Add optional runId for tracing
 }
 
 export interface DocumentMetadata extends BaseMetadata {
